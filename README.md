@@ -75,6 +75,30 @@ Ouvrir **http://127.0.0.1:7860** dans le navigateur. Le premier lancement peut p
 
 Les réponses sont produites à partir des documents retrouvés, et non d'une agrégation garantie de toute la base.
 
+## Limites techniques et fiabilité des réponses
+
+L'application repose sur des outils open source et des modèles d'intelligence artificielle légers, choisis pour permettre une exécution locale sans infrastructure coûteuse.
+
+Cependant, **les performances et la fiabilité des réponses restent limitées**. Lors des tests, l'assistant peut parfois fournir des réponses incorrectes, imprécises ou incohérentes, même lorsque les informations sont présentes dans le fichier CSV.
+
+Plusieurs facteurs peuvent expliquer ces limites :
+
+- **Modèle de langage peu puissant :** `qwen2:0.5b` est un modèle léger disposant de capacités de raisonnement limitées, notamment pour les calculs et les comparaisons.
+- **Recherche vectorielle approximative :** ChromaDB identifie les documents selon leur similarité sémantique, sans garantir la récupération de toutes les données nécessaires.
+- **Contexte restreint :** seuls quatre documents sont récupérés par défaut, ce qui peut entraîner des réponses incomplètes ou des erreurs dans les totaux.
+- **Absence de calculs déterministes :** les réponses numériques sont générées par le modèle plutôt que calculées directement à partir du fichier CSV.
+
+### Perspectives d'amélioration
+
+Pour améliorer la fiabilité de l'application, plusieurs évolutions sont envisageables :
+
+- Utiliser un modèle de langage plus performant.
+- Optimiser la recherche et la récupération des données.
+- Intégrer des calculs Python/Pandas pour garantir l'exactitude des indicateurs chiffrés.
+- Exploiter Power BI pour visualiser et vérifier les KPI de recrutement.
+
+**En conclusion**, cette application constitue un prototype fonctionnel permettant d'expérimenter l'utilisation d'un assistant IA RAG dans l'analyse des données de recrutement. Elle présente néanmoins des limites techniques et ne garantit pas systématiquement l'exactitude des réponses. Les résultats doivent donc être vérifiés avant toute utilisation décisionnelle.
+
 ### Dashboard local
 
 <img width="1143" height="630" alt="Capture d&#39;écran 2025-10-03 000602" src="https://github.com/user-attachments/assets/9a673be7-01d7-4e0a-a5e8-f395893fdea6" />
