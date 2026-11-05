@@ -24,7 +24,7 @@ projet-recrutement/
 ├── requirements.txt        # Dépendances Python
 ├── README.md
 ├── data/
-│   └── FactRecruteuse.csv  # Données source (à fournir localement)
+│   └── FactRecruteuse.csv  # Données source
 └── chroma_langchain_db/    # Index créé lors de la première exécution
 ```
 
