@@ -66,6 +66,8 @@ python main.py
 
 Ouvrir **http://127.0.0.1:7860** dans le navigateur. Le premier lancement peut prendre plus de temps pendant la création de l'index.
 
+<img width="1476" height="882" alt="image" src="https://github.com/user-attachments/assets/d1b961f7-3676-4bae-bc1f-9fb68b1d9ca1" />
+
 **Confidentialité :** dans `main.py`, remplacer `share=True` par `share=False` pour éviter la création d'un lien Gradio public. Ne pas publier le CSV, l'index ChromaDB ou un lien public vers un rapport contenant des données personnelles.
 
 ## Questions possibles
