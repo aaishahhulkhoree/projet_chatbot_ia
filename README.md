@@ -75,18 +75,9 @@ Ouvrir **http://127.0.0.1:7860** dans le navigateur. Le premier lancement peut p
 
 Les réponses sont produites à partir des documents retrouvés, et non d'une agrégation garantie de toute la base.
 
-## Ajouter le dashboard Power BI (à réaliser)
-
-**Objectif :** proposer deux onglets dans Gradio :
-
-1. **Assistant IA** : interface RAG actuelle.
-2. **Dashboard Power BI** : affichage du rapport de suivi du recrutement.
-
-
 ### Dashboard local
 
-
-
+<img width="1143" height="630" alt="Capture d&#39;écran 2025-10-03 000602" src="https://github.com/user-attachments/assets/9a673be7-01d7-4e0a-a5e8-f395893fdea6" />
 
 ## Dépannage
 
